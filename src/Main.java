@@ -22,9 +22,10 @@ public class Main {
         for (int i = 0; i < spendingDay.length; i++) {
             spendingMonth = spendingMonth + spendingDay[i];
         }
-        System.out.println("Сумма трат за месяц, составила - "+spendingMonth+" рублей.");
+        System.out.println("Сумма трат за месяц, составила - " + spendingMonth + " рублей.");
     }
-    public static void task2(){
+
+    public static void task2() {
 
     }
 }
