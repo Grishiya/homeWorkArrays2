@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         task1();
+        task2();
     }
 
     public static int[] generateRandomArray() {
@@ -16,12 +17,14 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1.");
-        int[] arr = generateRandomArray();
-        int sum = 0;
-        System.out.println(Arrays.toString(arr));
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        int[] spendingDay = generateRandomArray();
+        int spendingMonth = 0;
+        for (int i = 0; i < spendingDay.length; i++) {
+            spendingMonth = spendingMonth + spendingDay[i];
         }
-        System.out.println(sum);
+        System.out.println("Сумма трат за месяц, составила - "+spendingMonth+" рублей.");
+    }
+    public static void task2(){
+
     }
 }
