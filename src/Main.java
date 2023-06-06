@@ -30,8 +30,8 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2.");
         int[] spendingDay = generateRandomArray();
-        int maxSpending = -1;
-        int minSpending = 1000000;
+        int maxSpending = spendingDay[0];
+        int minSpending = spendingDay[0];
         for (int i = 0; i < spendingDay.length; i++) {
             if (spendingDay[i] > maxSpending) {
                 maxSpending = spendingDay[i];
@@ -53,13 +53,14 @@ public class Main {
         for (int i = 0; i < spendingDay.length; i++) {
             spendingMonth = spendingMonth + spendingDay[i];
         }
-        mediumSpending = spendingMonth / 30;
+        mediumSpending = spendingMonth / (double) spendingDay.length;
         System.out.println("Средняя сумма трат за месяц составила - " + mediumSpending + " рублей.");
     }
-    public static void task4(){
+
+    public static void task4() {
         System.out.println("Задача 4.");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >=0; i--) {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
 
         }
